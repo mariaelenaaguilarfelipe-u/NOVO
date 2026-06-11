@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Stock</title>
+    <link rel="stylesheet" href="./stock.css">
+    <style>
+        /* Ajustes rápidos para los botones dentro de la tabla */
+        #tabla-inventario button { margin: 0 6px; padding: 6px 8px; }
+        #tabla-inventario input { padding: 6px; }
+    </style>
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('adminLoggedIn') !== 'true') {
+            window.location.href = 'admin/adminacces.html';
+        }
+    </script>
+    <section id="seccion-admin">
+        <h1>Control de Stock</h1>
+        <a class="volver-admin" href="admin/admin.html">Volver al panel</a>
+        <div id="alertas"></div>
+        <table id="tabla-inventario">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Stock</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo-tabla"></tbody>
+        </table>
+    </section>
+
+    <script src="./js/stock.js"></script>
+</body>
+</html>

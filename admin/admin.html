@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="css/panel.css">
+</head>
+<body>
+    <div class="admin-app">
+        <header class="admin-header">
+            <div>
+                <h1>Panel de Administración</h1>
+                <p>Bienvenida, Isabel</p>
+            </div>
+            <a class="salir" href="adminacces.html" onclick="localStorage.removeItem('adminLoggedIn')">Cerrar sesión</a>
+        </header>
+
+        <section class="resumen">
+            <article class="bloque">
+                <h2>Usuarios activos <span class="etiqueta-panel">online</span></h2>
+                <p>24</p>
+            </article>
+            <article class="bloque">
+                <h2>Productos <span class="etiqueta-panel">stock</span></h2>
+                <p>128</p>
+            </article>
+            <article class="bloque">
+                <h2>Productos guardados <span class="etiqueta-panel">guardado</span></h2>
+                <p>46</p>
+            </article>
+            <article class="bloque">
+                <h2>Pedidos pendientes <span class="etiqueta-panel">urgente</span></h2>
+                <p>9</p>
+            </article>
+            <article class="bloque">
+                <h2>Ingresos <span class="etiqueta-panel">total</span></h2>
+                <p>xfa3,450</p>
+            </article>
+        </section>
+
+        <section class="novo-section">
+            <article class="novo-card">
+                <h2>Acciones rápidas</h2>
+                <ul>
+                    <li><a href="../cliente/principal.html">Ver catálogo <span class="etiqueta-panel">Cliente</span></a></li>
+                    <li><a href="../gestion.html">Agregar pedido <span class="etiqueta-panel">Pedidos</span></a></li>
+                    <li><a href="../gestion.html?review=1">Revisar pedidos <span class="etiqueta-panel">Pedidos</span></a></li>
+                    <li><a href="../stock.html">Actualizar inventario <span class="etiqueta-panel">Inventario</span></a></li>
+                    <li><a href="../gestion.html?registros=1">Registros de pedidos <span class="etiqueta-panel">Registro</span></a></li>
+                </ul>
+            </article>
+            <article class="novo-card">
+                <h2>Notificaciones</h2>
+                <ul>
+                    <li>Hay 3 pedidos nuevos por revisar.</li>
+                    <li>2 productos están por agotarse.</li>
+                    <li>Último inicio de sesión: hoy.</li>
+                </ul>
+            </article>
+        </section>
+
+    </div>
+    
+</body>
+</html>

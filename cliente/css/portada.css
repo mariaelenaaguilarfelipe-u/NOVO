@@ -1,0 +1,85 @@
+:root {
+    --verde-color: #0b462d; /* Verde oscuro principal */
+    --verde_fino: #557c55;  /* Verde hoja suave */
+    --leche: #f9f9f6;      /* Fondo hueso/arena claro */
+    --text-color: #333333;
+    --white: #ffffff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: var(--verde-color);
+    list-style: none;
+    color: var(--white);
+    
+}
+
+.strong{
+    display: flex;
+    margin-left: 20px;
+}
+
+body{
+     background-color: var(--leche);
+     color: var(--text-color);
+     background-image: url(/img/fondos/97ae679d3797279c3b4ceec31464247f.jpg);
+     background-size: cover;
+     justify-content: center;
+     align-items: center;
+     
+}
+
+h1{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+     color: var(--white);
+}
+
+.btn{
+    padding: 12px 25px;
+    background-color: #7ba682;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 489px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 23%;
+    justify-content: center;
+    align-items: 20px;
+    
+
+    
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:grey;
+}
+
+.sesion{
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+

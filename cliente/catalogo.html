@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Catálogo con WhatsApp</title>
+    <link rel="stylesheet" href="./css/catalogo.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <h1>Catalogo_Novo</h1>
+            <a class="volver" href="./principal.html">Volver</a>
+           
+        </div>
+        <!-- Filtros por categoría -->
+        <nav class="filtros">
+            <button class="btn-filtro activo" id="todos">Todos</button>
+            <button class="btn-filtro" id="Cabello">Cabello</button>
+            <button class="btn-filtro" id="Piel">Piel</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Aquí JavaScript meterá las tarjetas de productos -->
+        <section id="contenedor-productos" class="grid-productos"></section>
+    </main>
+
+    
+    <div id="modal-compra" class="modal">
+        <div class="contenido-modal">
+            <div class="modal-header">
+                <h2>Confirmar Pedido</h2>
+                <span class="cerrar-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Estás solicitando: <strong id="nombre-producto-modal"></strong></p>
+                <form id="formulario-pedido">
+                    <label>Tu Nombre:</label>
+                    <input type="text" id="nombre-cliente" required placeholder="Ej. María Elena">
+
+                    <label>Dirección de entrega:</label>
+                    <input type="text" id="direccion-cliente" required placeholder="Ej. Barrio Centro, Calle Principal">
+
+                    <label>Teléfono:</label>
+                    <input type="number" id="telefono-cliente" required placeholder="Ej. 600000000">
+
+                    <label>Notas o Detalles (tamaño, etc):</label>
+                    <textarea id="notas-cliente" rows="3" placeholder="Ej. Quiero el tono rosa pastel..."></textarea>
+
+                    <!-- Botón que envía el pedido a WhatsApp -->
+                    <button type="submit" class="btn-enviar-pedido">Solicitar Pedido</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/catalogo.js"></script>
+
+</body>
+</html>

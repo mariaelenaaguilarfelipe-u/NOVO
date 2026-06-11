@@ -1,0 +1,14 @@
+:root {
+    --verde-color: #0b462d; /* Verde oscuro principal */
+    --verde_fino: #557c55;  /* Verde hoja suave */
+    --leche: #f9f9f6;      /* Fondo hueso/arena claro */
+    --text-color: #333333;
+}
+
+
+body{
+    background-image: url(/img/fondos/3bdd257342223993eabae3ce369e500a.jpg);
+    background-size: cover;
+
+}
+

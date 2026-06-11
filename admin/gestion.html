@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin</title>
+        <link rel="stylesheet" href="/admin/css/gestion.css">
+</head>
+<body>
+    
+        <header>
+            <p>Natural Novo</p>
+        </header>
+        <a class="volver-admin" href="admin/admin.html">Volver al panel</a>
+        <h1>Gestion de pedidos</h1>
+
+        <form class="formulario" id="formulario-pedidos">
+            <strong class="input">Registrar pedido</strong>
+            <div class="campo">
+                <label for="nombre-cliente">Nombre del cliente</label>
+                <input class="input" id="nombre-cliente" type="text" placeholder="Nombre del cliente" required>
+            </div>
+            <div class="campo">
+                <label for="direccion-cliente">Dirección</label>
+                <input class="input" id="direccion-cliente" type="text" placeholder="Dirección" required>
+            </div>
+            <div class="campo">
+                <label for="telefono-cliente">Teléfono</label>
+                <input class="input" id="telefono-cliente" type="number" placeholder="Teléfono" required>
+            </div>
+            <div class="campo">
+                <label for="productos-cliente">Productos</label>
+                <input class="input" id="productos-cliente" type="text" placeholder="Productos seleccionados" required>
+            </div>
+            <div class="campo">
+                <label for="cantidad-pedido">Cantidad</label>
+                <input class="input" id="cantidad-pedido" type="number" placeholder="Cantidad" required>
+            </div>
+            <div class="campo">
+                <label for="estado-pedido">Estado</label>
+                <select class="input" id="estado-pedido" required>
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="Aceptado">Aceptado</option>
+                    <option value="Denegado">Denegado</option>
+                </select>
+            </div>
+            <button class="btn" type="submit">Registrar</button>
+        </form>
+
+
+        <script src="./js/gestion.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal</title>
+    <link rel="stylesheet" href="./css/sesion.css">
+</head>
+<body>
+       
+         <header>
+          <div class="logo">
+           <p>Bienvenidos a</p>
+           <strong class="texto">Natural Novo!</strong>
+           </div>
+           
+         </header>
+     
+    <h1>Natural Novo</h1>
+       <div class="contenedor">
+        <button class="btn" type="submit" id="lanzar-modal">Registrar</button>
+       </div>
+     <div class="contenedor-modal">
+        <div class="modal">
+           
+            <h2>Login</h2>
+            <form action="./principal.html">
+                <input type="text" placeholder="Introduce tu nombre" id="nombre" required>
+                <input type="tel" placeholder="Teléfono (sólo números)" id="telefono" required pattern="[0-9]{7,15}">
+                <small>Teléfono: entre 7 y 15 dígitos, sin espacios ni signos.</small>
+                <button class="btn" type="submit" id="ocultar-modal">Acceder</button>
+            </form>
+        </div>
+     </div>
+       
+      <script src="../js/sesion.js"></script>
+</body>
+</html>

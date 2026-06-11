@@ -1,0 +1,118 @@
+:root{
+    --verde-color:#0b462d;
+    --verde-fino:#557c55;
+    --leche:#f9f9f6;
+    --white:#ffffff;
+}
+
+/* Contenedor principal del inventario */
+#seccion-admin {
+    padding: 24px;
+    background-color: var(--leche);
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Estilo para la tabla de stock con un aspecto más relajado */
+#tabla-inventario {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 14px;
+    margin-top: 20px;
+}
+
+#tabla-inventario th, #tabla-inventario td {
+    padding: 14px 16px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#tabla-inventario thead tr th {
+    background-color: var(--verde-fino);
+    color: var(--white);
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 18px;
+}
+
+#tabla-inventario tbody tr {
+    background-color: var(--white);
+    border-radius: 18px;
+    box-shadow: 0 10px 20px rgba(85, 124, 85, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#tabla-inventario tbody tr:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(85, 124, 85, 0.12);
+}
+
+#tabla-inventario tbody tr td {
+    border: none;
+    color: #4d4d4d;
+}
+
+#tabla-inventario tbody tr td:first-child {
+    font-weight: 700;
+    color: var(--verde-color);
+}
+
+#tabla-inventario tbody tr td:nth-child(2) {
+    color: var(--verde-fino);
+}
+
+#tabla-inventario tbody tr td:nth-child(3) {
+    color: #3a5c3f;
+}
+
+#tabla-inventario tbody tr td:nth-child(4) {
+    text-align: right;
+}
+
+#tabla-inventario button {
+    border: none;
+    border-radius: 999px;
+    background-color: var(--verde-color);
+    color: var(--white);
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#tabla-inventario button:hover {
+    background-color: #37583a;
+}
+
+/* Alerta y helpers */
+.alerta {
+    background-color: #e6f4ea;
+    color: #1f4d2d;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border-left: 5px solid var(--verde-fino);
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+@keyframes blinker { 50% { opacity: 0.7; } }
+
+.stock-numero { font-weight: bold; font-size: 1.1em; }
+.stock-critico { color: #b33a3a; }
+
+/* Botón volver al panel (para admin) */
+.volver-admin{
+  display:inline-block;
+  margin:12px 0;
+  padding:8px 14px;
+  background:var(--verde-color);
+  color:var(--white);
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
+}
+
+@media (max-width: 600px) {
+    #tabla-inventario { font-size: 14px; }
+    #tabla-inventario th, #tabla-inventario td { padding: 8px; }
+}

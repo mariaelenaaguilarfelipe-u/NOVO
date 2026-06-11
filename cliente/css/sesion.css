@@ -1,0 +1,148 @@
+:root {
+    --verde-color: #0b462d; /* Verde oscuro principal */
+    --verde_fino: #557c55;  /* Verde hoja suave */
+    --leche: #f9f9f6;      /* Fondo hueso/arena claro */
+    --text-color: #333333;
+    --white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: var(--verde-color);
+    list-style: none;
+    color: var(--white);
+    
+}
+
+.strong{
+    display: flex;
+    margin-left: 20px;
+    color: var(--white);
+}
+
+
+body{
+
+    background-image: url(/img/fondos/97ae679d3797279c3b4ceec31464247f.jpg);
+    background-size: cover;
+
+}
+h1{
+    text-align: center;
+    width: 100%;
+    margin: 50px 0;
+    padding: 50px 0;
+    color: var(--white);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+}
+
+
+h2{
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:20px;
+    margin: 15px 0;
+    font-size: 30px;
+    
+}
+.contenedor {
+    display: flex;             
+    justify-content: center;   
+    align-items: center;      
+    height: 100px;;         
+}
+
+.btn{
+    text-align: center;
+    padding: 19px;
+    border-radius: 50px;
+    background-color:var(--verde-color);
+    border: none;
+    color: white;
+    transition: all 0.5s;
+
+}
+.btn:hover{
+    background-color:var(--text-color);
+    cursor: pointer;
+}
+
+img{
+    width: 400px;
+}
+
+.contenedor-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  
+
+
+}
+
+.contenedor-modal.mostrar{
+    background-color:var(--verde_fino);
+    z-index: 1 ;
+    opacity: 0.9;
+    
+}
+
+.contenedor-modal.modal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 500px;
+    padding: 50px;
+    background-color: white;
+    opacity: 1;
+    
+
+}
+
+form{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    border-radius: 5px;
+    border:solid var(--verde-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--leche);
+}
+
+form input{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    
+    
+}
+
