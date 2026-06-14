@@ -5,6 +5,18 @@
     --white:#ffffff;
 }
 
+
+
+
+  
+       #tabla-inventario button { margin: 0 6px;
+         padding: 6px 8px;
+         }
+        #tabla-inventario input {
+             padding: 6px; 
+        }
+   
+
 /* Contenedor principal del inventario */
 #seccion-admin {
     padding: 24px;

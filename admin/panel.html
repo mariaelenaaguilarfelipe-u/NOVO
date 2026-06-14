@@ -7,11 +7,7 @@
     <link rel="stylesheet" href="css/panel.css">
 </head>
 <body>
-    <script>
-        if (localStorage.getItem('adminLoggedIn') !== 'true') {
-            window.location.href = 'adminacces.html';
-        }
-    </script>
+    
 
     <div class="admin-app">
         <header class="admin-header">
@@ -53,9 +49,8 @@
                 <ul>
                     <li><a href="../cliente/principal.html">Ver catálogo <span class="etiqueta-panel">Cliente</span></a></li>
                     <li><a href="gestion.html">Registrar pedido <span class="etiqueta-panel">Pedidos</span></a></li>
-                    <li><a href="gestion.html?review=1">Revisar pedidos <span class="etiqueta-panel">Pedidos</span></a></li>
                     <li><a href="stock.html">Actualizar inventario <span class="etiqueta-panel">Inventario</span></a></li>
-                    <li><a href="gestion.html?registros=1">Registros de pedidos <span class="etiqueta-panel">Registro</span></a></li>
+
                 </ul>
             </article>
             <article class="novo-card">

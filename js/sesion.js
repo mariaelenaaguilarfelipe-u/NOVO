@@ -1,16 +1,23 @@
-const btnLanzarModal=document.querySelector('#lanzar-modal');
-const btnOcultarModal=document.querySelector('#ocultar-modal');
-const contModal=document.querySelector('.contenedor-modal');
 
-const nombreInput=document.querySelector('#nombre');
-const empleoInput=document.querySelector('#empleo');
+const modal = document.getElementById('modalForm');
+const openBtn = document.getElementById('openBtn');
+const closeBtn = document.getElementById('closeBtn');
+const form = document.getElementById('formContent');
 
-btnLanzarModal.addEventListener('click',(e)=>{
-    e.preventDefault();
-    contModal.classList.add('mostrar')
-})
+// Abrir el modal usando la API nativa (.showModal)
+openBtn.addEventListener('click', () => {
+  modal.showModal();
+});
 
-btnOcultarModal.add('click',(e)=>{
-    e.preventDefault();
-    contModal.classList.remove('mostrar')
-})
+// Cerrar el modal al hacer clic en la 'X'
+closeBtn.addEventListener('click', () => {
+  modal.close();
+});
+
+// Manejar el envío del formulario
+form.addEventListener('submit', (e) => {
+  const name = document.getElementById('name').value;
+  console.log("Nombre enviado:", name);
+  
+  // Al usar method="dialog" en el HTML, el modal se cierra automáticamente al presionar enviar.
+});

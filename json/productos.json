@@ -26,7 +26,7 @@
         "nombre": "Crema Contorno de Ojos",
         "categoria": "Piel",
         "precio": "7.500 XAF",
-        "imagen": "/img/cuerpo/7869b78b30fbdf4756bb954302bb6880.jpg"
+        "imagen": "/img/cabello/992266be225f6a10e0561fa29ee6a35f.jpg"
     },
 
     {
@@ -43,7 +43,7 @@
         "nombre": "Mascarrilla",
         "categoria": "Cabello",
         "precio": "7.500 XAF",
-        "imagen": "/img/clavos/555812783_784905841182198_3904133536759513228_n.jpg"
+        "imagen": "/img/cabello/2ff45f545305cd97936206c68050dca4.jpg"
     },
 
     
@@ -52,32 +52,32 @@
         "nombre": "Mascarrilla",
         "categoria": "Cabello",
         "precio": "7.500 XAF",
-        "imagen"    : "/img/clavos/555812783_784905841182198_3904133536759513228_n.jpg"
+        "imagen"    : "/img/cabello/312c8066b040e2b214b069dc9f770f59.jpg"
     },
 
     
     {
        "id": 9,
         "nombre": "Mascarrilla",
-        "categoria": "Cabello",
-        "precio": "7.500 XAF",
-        "imagen": "/img/clavos/555812783_784905841182198_3904133536759513228_n.jpg"
+        "categoria": "piel",
+        "precio": "5000 XAF",
+        "imagen": "../img/cuerpo/1377313f833c71c0272a9a1a18feb49e.jpg"
     },
 
     {
         "id": 10,
         "nombre": "Mascarrilla",
         "categoria": "Cabello",
-        "precio": "7.500 XAF",
-        "imagen": "/img/clavos/555812783_784905841182198_3904133536759513228_n.jpg"
+        "precio": "8500 XAF",
+        "imagen": "/img/cuerpo/2b7a962d3ef286ea6e9365d898640a1d.jpg"
     },
 
     {
         "id": 11,
         "nombre": "Mascarrilla",
-        "categoria": "Cabello",
+        "categoria": "piel",
         "precio": "7.500 XAF",
-        "imagen": "/img/clavos/555812783_784905841182198_3904133536759513228_n.jpg"
+        "imagen": "/img/curcuma/fc8eb117f6b484cba8ed3af56bca3826.jpg"
     },
 
     {
@@ -85,14 +85,14 @@
         "nombre": "Mascarrilla",
         "categoria": "Cabello",
         "precio": "7.500 XAF",
-        "imagen": "/img/clavos/555812783_784905841182198_3904133536759513228_n.jpg"
+        "imagen": "/img/curcuma/d2ab73a223d93e819bd8fc7fdc854542.jpg"
     },
     {
         "id": 13,
         "nombre": "Mascarrilla",
         "categoria": "Cabello",
         "precio": "7.500 XAF",
-        "imagen" : "/img/clavos/555812783_784905841182198_3904133536759513228_n.jpg"
+        "imagen" : "/img/cabello/5724b8bfccd821dd70a4fadbdc0bf038.jpg"
     }
     
 
