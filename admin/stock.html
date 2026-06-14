@@ -14,12 +14,16 @@
 <body>
     <script>
         if (localStorage.getItem('adminLoggedIn') !== 'true') {
-            window.location.href = 'admin/adminacces.html';
+            window.location.href = 'adminacces.html';
         }
     </script>
     <section id="seccion-admin">
         <h1>Control de Stock</h1>
-        <a class="volver-admin" href="admin/admin.html">Volver al panel</a>
+        <a class="volver-admin" href="panel.html">Volver al panel</a>
+        <div class="stock-overview">
+            <span class="stock-numero">28 productos en inventario</span>
+            <span class="stock-critico">3 productos en riesgo</span>
+        </div>
         <div id="alertas"></div>
         <table id="tabla-inventario">
             <thead>
@@ -34,6 +38,6 @@
         </table>
     </section>
 
-    <script src="./js/stock.js"></script>
+    <script src="../js/stock.js"></script>
 </body>
 </html>

@@ -3,36 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>modal</title>
+    <title>login</title>
     <link rel="stylesheet" href="./css/sesion.css">
 </head>
 <body>
-       
-         <header>
-          <div class="logo">
-           <p>Bienvenidos a</p>
-           <strong class="texto">Natural Novo!</strong>
-           </div>
-           
-         </header>
-     
-    <h1>Natural Novo</h1>
+      
+      <header>
+        <div class="logo">
+            <h2> Bienvenido
+                a
+            </h2>
+            <h3> Natural Novo!</h3>
+        </div>
+      </header>
+
+
        <div class="contenedor">
-        <button class="btn" type="submit" id="lanzar-modal">Registrar</button>
+        <button id="abrir-modal" class="btn">Iniciar Sesión</button>
+       </div>
+ 
+        
+          
+        <button class="btn" type="submit" id="lanzar-modal">LANZAR MODAL</button>
        </div>
      <div class="contenedor-modal">
         <div class="modal">
-           
+            <img src="./img/7869b78b30fbdf4756bb954302bb6880.jpg" alt="">
             <h2>Login</h2>
-            <form action="./principal.html">
-                <input type="text" placeholder="Introduce tu nombre" id="nombre" required>
-                <input type="tel" placeholder="Teléfono (sólo números)" id="telefono" required pattern="[0-9]{7,15}">
-                <small>Teléfono: entre 7 y 15 dígitos, sin espacios ni signos.</small>
-                <button class="btn" type="submit" id="ocultar-modal">Acceder</button>
+            <form action="">
+                <input type="text" placeholder="introduce un nombre" id="nombre">
+                <input type="text" placeholder="empleo" id="puesto">
+                <button class="btn" type="submit" id="ocultar-modal">Enviar</button>
+                
             </form>
         </div>
-     </div>
-       
-      <script src="../js/sesion.js"></script>
+    
+
+
+
+   <script src="js/sesion.js"></script>
 </body>
 </html>

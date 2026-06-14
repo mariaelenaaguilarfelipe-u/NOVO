@@ -12,8 +12,8 @@ btnAceder.addEventListener('click', (e) => {
     if (nombre === 'isabel') {
         if (password === 'novo2024') {
             localStorage.setItem('adminLoggedIn', 'true');
-            alert('Bienvenida, isabel a su panel');
-            window.location.href = 'index.html';
+            alert('Bienvenida, Isabel. Redirigiendo al panel...');
+            window.location.href = 'panel.html';
             return;
         }
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="css/panel.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('adminLoggedIn') !== 'true') {
+            window.location.href = 'adminacces.html';
+        }
+    </script>
+
+    <div class="admin-app">
+        <header class="admin-header">
+            <div>
+                <p class="small-label">Sistema Natural Novo</p>
+                <h1>Panel de Administración</h1>
+                <p class="subtext">Bienvenida, Isabel</p>
+            </div>
+            <a class="inicio" href="index.html">Inicio</a>
+            <a class="salir" href="adminacces.html" onclick="localStorage.removeItem('adminLoggedIn')">Cerrar sesión</a>
+        </header>
+
+        <section class="resumen">
+            <article class="bloque">
+                <h2>Pedidos totales</h2>
+                <p id="metric-pedidos">0</p>
+            </article>
+            <article class="bloque">
+                <h2>Pedidos pendientes</h2>
+                <p id="metric-pendientes">0</p>
+            </article>
+            <article class="bloque">
+                <h2>Productos en stock</h2>
+                <p id="metric-productos">0</p>
+            </article>
+            <article class="bloque">
+                <h2>Pedidos aceptados</h2>
+                <p id="metric-aceptados">0</p>
+            </article>
+            <article class="bloque">
+                <h2>Ingreso estimado</h2>
+                <p id="metric-ingresos">S/ 0</p>
+            </article>
+        </section>
+
+        <section class="novo-section">
+            <article class="novo-card">
+                <h2>Acciones rápidas</h2>
+                <ul>
+                    <li><a href="../cliente/principal.html">Ver catálogo <span class="etiqueta-panel">Cliente</span></a></li>
+                    <li><a href="gestion.html">Registrar pedido <span class="etiqueta-panel">Pedidos</span></a></li>
+                    <li><a href="gestion.html?review=1">Revisar pedidos <span class="etiqueta-panel">Pedidos</span></a></li>
+                    <li><a href="stock.html">Actualizar inventario <span class="etiqueta-panel">Inventario</span></a></li>
+                    <li><a href="gestion.html?registros=1">Registros de pedidos <span class="etiqueta-panel">Registro</span></a></li>
+                </ul>
+            </article>
+            <article class="novo-card">
+                <h2>Notificaciones</h2>
+                <ul>
+                    <li>Hay <span id="notice-pendientes">0</span> pedidos nuevos por revisar.</li>
+                    <li><span id="notice-stock">0</span> productos están por agotarse.</li>
+                    <li>Último inicio de sesión: hoy.</li>
+                </ul>
+            </article>
+        </section>
+    </div>
+
+    <script src="js/panel.js"></script>
+</body>
+</html>

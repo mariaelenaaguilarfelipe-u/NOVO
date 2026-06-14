@@ -11,8 +11,8 @@
         <header>
             <p>Natural Novo</p>
         </header>
-        <a class="volver-admin" href="admin/admin.html">Volver al panel</a>
-        <h1>Gestion de pedidos</h1>
+        <a class="volver-admin" href="./panel.html">Volver al panel</a>
+        <h1>Gestión de pedidos</h1>
 
         <form class="formulario" id="formulario-pedidos">
             <strong class="input">Registrar pedido</strong>
@@ -47,8 +47,14 @@
             <button class="btn" type="submit">Registrar</button>
         </form>
 
+        <div id="mensaje-pedido" class="aviso"></div>
 
-        <script src="./js/gestion.js"></script>
+        <section class="gestion-log">
+            <h2>Historial de pedidos</h2>
+            <ul id="lista-pedidos"></ul>
+        </section>
+
+        <script src="../js/gestion.js"></script>
     
 </body>
 </html>
